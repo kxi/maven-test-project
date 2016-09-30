@@ -40,6 +40,22 @@
             <url>https://repo.spring.io/libs-release</url>
         </repository>
     </repositories>
+
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>artifactory-server-releases</name>
+        <url>http://192.168.70.2:8081/artifactory/maven-test-repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>artifactory-server-snapshots</name>
+        <url>http://192.168.70.2:8081/artifactory/maven-test-repo</url>
+    </snapshotRepository>
+</distributionManagement>
+
+
+
     <pluginRepositories>
         <pluginRepository>
             <id>spring-releases</id>
